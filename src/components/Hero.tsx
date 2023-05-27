@@ -6,9 +6,7 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <MainContent type="center">
-        <div className="text-6xl lg:text-8xl">
-            
-        </div>
+      <div className="text-6xl lg:text-8xl"></div>
       <div className="text-6xl lg:text-8xl">
         your tech team <span className="font-thin">awaits you.</span>
       </div>

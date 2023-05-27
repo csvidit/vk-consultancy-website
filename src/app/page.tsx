@@ -33,7 +33,7 @@ export default function Home() {
         />
       </Head>
       <MainContainer>
-        <Header />
+        <Header current={undefined} />
         <Hero />
         <Footer />
       </MainContainer>
