@@ -9,6 +9,9 @@ const Footer = () => {
           <p className="">&copy; 2023</p>
           <h2 className="text-lg lg:text-2xl">VIDIT KHANDELWAL</h2>
         </div>
+        <div className="text-xs">
+          
+        </div>
         <div className="flex flex-col lg:flex-row space-y-5 lg:space-y-0 lg:space-x-5 items-center text-xs">
           <Link
             className="flex flex-row space-x-2 items-center"
