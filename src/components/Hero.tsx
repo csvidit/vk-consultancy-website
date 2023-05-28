@@ -17,7 +17,7 @@ const Hero = () => {
         system? want to create flyers or posters?
         <span className="font-normal"> we got you.</span>
       </div>
-      <div className="flex flex-col lg:flex-row space-y-5 lg:space-y-0 lg:space-x-5 items-center">
+      <div className="flex flex-col lg:flex-row space-y-5 lg:space-y-0 lg:space-x-5 items-start lg:items-center">
         <Link
           href="https://tjdqeyg9n8x.typeform.com/to/dyMM42pF"
           className="relative group items-center justify-center p-2.5 w-max z-10 transition-all duration-300 ease-in-out"
