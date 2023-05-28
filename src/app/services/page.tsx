@@ -47,7 +47,6 @@ export default function Home() {
             <div>Website Design & Creation</div>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2">
-            
             <ServiceCard>
               <ServiceName>Website in Squarespace, upto 10 pages</ServiceName>
               <ServiceInfo>
@@ -72,17 +71,29 @@ export default function Home() {
             <ServiceCard>
               <ServiceName>Custom Website, Next.js</ServiceName>
               <ServiceInfo>
-                <div className="font-light">USD 100 + USD 50 per page</div>
-                
-                <div className="font-light">INR 2300 + INR 1200 per page</div>
-                <div className="flex flex-row space-x-1 items-center flex-wrap">
-                  2 revisions, additional revisions as per complexity.
+                <div className="flex flex-row space-x-1">
+                  <ServicePrice usd={150} inr={3500} />{" "}
+                  <div>for the first page.</div>
                 </div>
+                <div className="flex flex-row space-x-1">
+                  <ServicePrice usd={100} inr={2300} /> <div>thereafter</div>
+                </div>
+                <div className="flex flex-row space-x-1">
+                  <ServiceRevisionsInfo usd={50} inr={1200} />
+                  <div>plus.</div>
+                </div>
+
+                {/* <div className="font-light">USD 150 for the first page, USD 100 per page</div>
+                
+                <div className="font-light">INR 3500 for the first page, INR 2300 per page</div>
+                <div className="flex flex-row space-x-1 items-center flex-wrap">
+                  2 revisions, additional revisions USD 50+ 
+                </div> */}
               </ServiceInfo>
             </ServiceCard>
           </div>
         </MainContent>
-        <Footer/>
+        <Footer />
       </MainContainer>
     </>
   );

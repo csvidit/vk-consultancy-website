@@ -1,10 +1,14 @@
+'use client'
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import MainContainer from "@/components/MainContainer";
+import Nav from "@/components/Nav";
 import Head from "next/head";
+import { useState } from "react";
 
 export default function Home() {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <>
       <Head>
@@ -33,7 +37,8 @@ export default function Home() {
         />
       </Head>
       <MainContainer>
-        <Header current={undefined} />
+        <Nav isOpen={isOpen} setIsOpen={setIsOpen}></Nav>
+        <Header setIsOpen={setIsOpen} current={undefined} />
         <Hero />
         <Footer />
       </MainContainer>

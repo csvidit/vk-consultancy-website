@@ -19,7 +19,7 @@ const Footer = () => {
           </Link>
           <Link
             className="flex flex-row space-x-2 items-center"
-            href="https://read.cv/in/viditkhandelwal"
+            href="https://read.cv/viditkhandelwal"
           >
             <div>READ.CV</div>
             <HiArrowUpRight />
