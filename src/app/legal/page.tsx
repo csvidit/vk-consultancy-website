@@ -56,7 +56,7 @@ export default function Home() {
           <div className="flex flex-col space-y-2.5 text-base lg:w-3/4">
             <p className="font-medium">
               By using this website, using the contact form, and availing any of
-              Vidit Khandelwal Studio's services, you agree to the following
+              Vidit Khandelwal Studio&apos;s services, you agree to the following
               terms and conditions.
             </p>
 
