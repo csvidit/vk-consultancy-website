@@ -23,7 +23,7 @@ const Header2 = (props: { current: string | undefined }) => {
           >
             <Hamburger size={20} toggled={isOpen} toggle={setIsOpen} />
           </button>
-          <div className="flex flex-row space-x-1 items-start">
+          <div className="flex flex-col space-y-1 lg:space-y-0 lg:flex-row lg:space-x-1 items-start">
             <div className="flex flex-col space-y-1 group w-fit h-fit">
               <Link
                 href="/"
@@ -36,8 +36,8 @@ const Header2 = (props: { current: string | undefined }) => {
               </Link>
               <div className="border-t border-t-neutral-900 dark:border-t-neutral-100 w-0 z-0 h-0 group-hover:w-full group-hover:transition-all duration-200 ease-in-out bg-neutral-900 dark:bg-neutral-100"></div>
             </div>
-            <div className="flex flex-row space-x-1 items-center">
-              <div className="font-extralight">
+            <div className="flex lg:flex-row lg:space-x-1 items-center">
+              <div className="font-extralight hidden lg:flex">
                 <HiArrowLongRight />
               </div>
               <div className="font-semibold">{props.current}</div>
