@@ -30,11 +30,11 @@ const Hero = () => {
           <div className="absolute left-0 top-0 w-full h-full group-hover:top-0 group-hover:h-1/6  transition-all group-hover:transition-all ease-in-out duration-200 bg-neutral-900 dark:bg-neutral-100 group-hover:place-self-center group-hover:bg-neutral-900 group-hover:dark:bg-neutral-100"></div>
         </Link>
         <Link
-          href="/services"
+          href="#why-us"
           className="relative group items-center justify-center p-2.5 w-max z-10"
         >
           <div className="z-10 flex flex-row space-x-2 items-center group-hover:text-violet-400 group-hover:dark:text-violet-600">
-            <HiOutlineViewGrid className="z-10 group-hover:rotate-45 group-hover:transition-all delay-150 duration-200 ease-in-out" />
+            <HiOutlineViewGrid className="z-10 group-hover:rotate-45 group-hover:transition-all duration-200 ease-in-out" />
             <p className="z-10">Learn More</p>
           </div>
           <div className="absolute left-0 bottom-0 w-full h-[1px] transition-all group-hover:transition-all ease-in-out duration-200 bg-neutral-900 dark:bg-neutral-100 group-hover:place-self-center group-hover:h-full group-hover:bg-neutral-900 group-hover:dark:bg-neutral-100"></div>

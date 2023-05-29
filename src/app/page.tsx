@@ -2,6 +2,7 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import WhyUs from "@/components/WhyUs";
 import MainContainer from "@/components/MainContainer";
 import Nav from "@/components/Nav";
 import Head from "next/head";
@@ -40,6 +41,7 @@ export default function Home() {
         <Nav isOpen={isOpen} setIsOpen={setIsOpen}></Nav>
         <Header setIsOpen={setIsOpen} current={undefined} />
         <Hero />
+        <WhyUs/>
         <Footer />
       </MainContainer>
     </>

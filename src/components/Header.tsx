@@ -9,7 +9,7 @@ import { HiOutlineMenuAlt4 } from "react-icons/hi";
 const Header = (props: { current: string | undefined; setIsOpen: any }) => {
   if (props.current) {
     return (
-      <div className="flex flex-row space-x-2 w-screen h-max text-lg lg:text-2xl uppercase fixed top-0 px-5 py-2.5 lg:px-10 lg:py-5 backdrop-blur-md bg-neutral-200 dark:bg-neutral-900 dark:bg-opacity-30 bg-opacity-30">
+      <div className="flex flex-row space-x-2 w-screen text-lg lg:text-2xl uppercase fixed top-0 px-5 py-2.5 lg:px-10 lg:py-5 backdrop-blur-md bg-neutral-200 dark:bg-neutral-900 dark:bg-opacity-30 bg-opacity-30 z-40">
         <button
           onClick={() => {
             props.setIsOpen(true);
@@ -29,7 +29,7 @@ const Header = (props: { current: string | undefined; setIsOpen: any }) => {
                 <div className="font-normal">STUDIO</div>
               </div>
             </Link>
-            <div className="border-t border-t-neutral-900 dark:border-t-neutral-100 w-0 z-0 h-1/2 group-hover:w-full group-hover:transition-all duration-200 ease-in-out bg-neutral-900 dark:bg-neutral-100"></div>
+            <div className="border-t border-t-neutral-900 dark:border-t-neutral-100 w-0 z-0 h-0 group-hover:w-full group-hover:transition-all duration-200 ease-in-out bg-neutral-900 dark:bg-neutral-100"></div>
           </div>
           <p className="hidden lg:flex">/</p>
           <div className="uppercase font-semibold">{props.current}</div>
@@ -66,7 +66,7 @@ const Header = (props: { current: string | undefined; setIsOpen: any }) => {
     // );
   }
   return (
-    <div className="flex flex-row space-x-2 w-screen h-max text-lg lg:text-2xl uppercase fixed top-0 px-5 py-2.5 lg:px-10 lg:py-5 backdrop-blur-md bg-neutral-200 dark:bg-neutral-900 dark:bg-opacity-30 bg-opacity-30">
+    <div className="flex flex-row space-x-2 w-screen text-lg lg:text-2xl uppercase fixed top-0 px-5 py-2.5 lg:px-10 lg:py-5 backdrop-blur-md bg-neutral-200 dark:bg-neutral-900 dark:bg-opacity-30 bg-opacity-30 z-40">
       <button
         onClick={() => {
           props.setIsOpen(true);
@@ -75,7 +75,7 @@ const Header = (props: { current: string | undefined; setIsOpen: any }) => {
       >
         <HiOutlineMenuAlt4 />
       </button>
-      <div className="flex flex-col space-y-1 group">
+      <div className="flex flex-col space-y-1 group h-fit">
         <Link
           href="/"
           className="flex flex-row space-x-1 group transition-all"
@@ -85,7 +85,7 @@ const Header = (props: { current: string | undefined; setIsOpen: any }) => {
             <div className="font-normal">STUDIO</div>
           </div>
         </Link>
-        <div className="border-t border-t-neutral-900 dark:border-t-neutral-100 w-0 z-0 h-1/2 group-hover:w-full group-hover:transition-all duration-200 ease-in-out bg-neutral-900 dark:bg-neutral-100"></div>
+        <div className="border-t border-t-neutral-900 dark:border-t-neutral-100 w-0 z-0 h-0 group-hover:w-full group-hover:transition-all duration-200 ease-in-out bg-neutral-900 dark:bg-neutral-100"></div>
       </div>
     </div>
   );

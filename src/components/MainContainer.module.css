@@ -164,6 +164,7 @@
     background-size: cover;
     background-attachment: scroll;
     font-family: "Aspekta", "sans-serif";
+    scroll-behavior: smooth;
   }
 }
 
@@ -173,6 +174,7 @@
     background-size: cover;
     background-attachment: fixed;
     font-family: "Aspekta", "sans-serif";
+    scroll-behavior: smooth;
   }
 }
 
