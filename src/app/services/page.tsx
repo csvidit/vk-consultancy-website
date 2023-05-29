@@ -47,7 +47,7 @@ export default function Home() {
         />
       </Head>
       <MainContainer>
-        <Header2 current={undefined} />
+        <Header2 current="services" />
         <MainContent type="normal">
           <div className="flex flex-col justify-center text-2xl lg:text-4xl h-[25vh]">
             <div>Website Design & Creation</div>

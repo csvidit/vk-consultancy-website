@@ -49,10 +49,10 @@ export default function Home() {
         />
       </Head>
       <MainContainer>
-      <Header2 current={undefined}/>
+        <Header2 current="about" />
         <MainContent type="normal">
-          <div className="flex flex-col justify-center text-2xl lg:text-4xl h-[100vh]">
-            <div className="flex flex-col lg:flex-row space-y-5 lg:space-y-0 lg:space-x-10 lg:items-center">
+          <div className="flex flex-col space-y-5 lg:space-y-10 justify-center text-2xl lg:text-4xl h-[100vh]">
+            <div className="flex flex-col lg:flex-row space-y-5 lg:space-y-0 lg:space-x-10 lg:items-start">
               <div className="relative">
                 <Image
                   width={200}
@@ -62,17 +62,38 @@ export default function Home() {
                   className="rounded-full"
                 />
               </div>
-              <div className="">
-                Vidit Khandelwal
-                <span className="text-violet-700 dark:text-violet-300">
-                  {" "}
-                  is a software engineer, web developer, and UI designer based
-                  in the United States and India
-                </span>
+              <div className="flex flex-col space-y-5 lg:space-y-10">
+                <div className="">
+                  <div className="inline">Vidit Khandelwal</div>
+                  <span className="inline text-violet-700 dark:text-violet-300">
+                    {" "}
+                    is a software engineer, web developer, and UI designer based
+                    in the United States and India.
+                  </span>
+                </div>
+                <div className="text-base lg:text-lg spaced">
+                  He graduated summa cum laude and a member of the Computer
+                  Science Honor Society from DePauw University in 2023, earning
+                  a degree in Computer Science. He also spent a semester at the University of Oxford, studying international business and finance.
+                </div>
+                <div className="text-base lg:text-lg spaced">
+                  He has interned at the CaptureNoire project of Pixus, Inc. as
+                  the lead engineer during his time as a student, spearheading the
+                  technical development of an industry-grade photography app.{" "}
+                </div>
+                <div className="text-base lg:text-lg spaced">
+                  To know more, visit his{" "}
+                  <InlineLink href="https://cs.viditkhandelwal.com">
+                    portfolio
+                  </InlineLink>
+                  . He can be contacted for legitimate reasons at{" "}
+                  <InlineLink href="mailto:vidit@viditkhandelwal.com">
+                    vidit@viditkhandelwal.com
+                  </InlineLink>
+                </div>
               </div>
             </div>
           </div>
-          
         </MainContent>
         <Footer />
       </MainContainer>

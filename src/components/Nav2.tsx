@@ -26,10 +26,9 @@ const Nav2 = (props: { isOpen: boolean; setIsOpen: any }) => {
           : "hidden opacity-0 transition-opacity duration-300"
       }`}
       >
-        <Nav2Link href="/">Home</Nav2Link>
-        <Nav2Link href="/about">About</Nav2Link>
-        <Nav2Link href="/services">Services</Nav2Link>
-        <Nav2Link href="/contact">Contact</Nav2Link>
+        <Nav2Link size="large" href="/about">About</Nav2Link>
+        <Nav2Link size="large" href="/services">Services</Nav2Link>
+        <Nav2Link size="large" href="/contact">Contact</Nav2Link>
       </motion.div>
     </Transition>
   );
