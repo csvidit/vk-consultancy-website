@@ -35,7 +35,6 @@ const Header = (props: { current: string | undefined; setIsOpen: any }) => {
           <p className="hidden lg:flex">/</p>
           <div className="uppercase font-semibold">{props.current}</div>
         </div>
-        <Nav2/>
       </div>
     );
     // return (
@@ -78,10 +77,7 @@ const Header = (props: { current: string | undefined; setIsOpen: any }) => {
         <HiOutlineMenuAlt4 />
       </button>
       <div className="flex flex-col space-y-1 group h-fit">
-        <Link
-          href="/"
-          className="flex flex-row space-x-1 group transition-all"
-        >
+        <Link href="/" className="flex flex-row space-x-1 group transition-all">
           <div className="flex flex-row space-x-1 text-neutral-900 dark:text-neutral-100 font-extralight">
             <div className="flex">VIDIT KHANDELWAL</div>
             <div className="font-normal">STUDIO</div>
@@ -89,7 +85,6 @@ const Header = (props: { current: string | undefined; setIsOpen: any }) => {
         </Link>
         <div className="border-t border-t-neutral-900 dark:border-t-neutral-100 w-0 z-0 h-0 group-hover:w-full group-hover:transition-all duration-200 ease-in-out bg-neutral-900 dark:bg-neutral-100"></div>
       </div>
-      <Nav2/>
     </div>
   );
 };
