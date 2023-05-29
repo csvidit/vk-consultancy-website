@@ -78,7 +78,7 @@ const Nav = (props: { isOpen: boolean; setIsOpen: any }) => {
         </motion.div>
         <motion.div className="flex flex-col space-y-1 group">
           <Link
-            href="https;//read.cv/viditkhandelwal"
+            href="https://read.cv/viditkhandelwal"
             className="flex flex-row space-x-1 group transition-all"
           >
             <motion.div className="flex flex-row space-x-1 group-hover:text-neutral-400 transition-all duration-200 ease-in-out">
