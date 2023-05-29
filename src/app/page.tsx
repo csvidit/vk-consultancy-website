@@ -7,6 +7,7 @@ import MainContainer from "@/components/MainContainer";
 import Nav from "@/components/Nav";
 import Head from "next/head";
 import { useState } from "react";
+import Header2 from "@/components/Header2";
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -38,8 +39,7 @@ export default function Home() {
         />
       </Head>
       <MainContainer>
-        <Nav isOpen={isOpen} setIsOpen={setIsOpen}></Nav>
-        <Header setIsOpen={setIsOpen} current={undefined} />
+        <Header2 current={undefined}/>
         <Hero />
         <WhyUs/>
         <Footer />

@@ -2,6 +2,7 @@
 
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import Header2 from "@/components/Header2";
 import Hero from "@/components/Hero";
 import InlineLink from "@/components/InlineLink";
 import JumboTitle from "@/components/JumboTItle";
@@ -47,8 +48,7 @@ export default function Home() {
         />
       </Head>
       <MainContainer>
-        <Nav isOpen={isOpen} setIsOpen={setIsOpen}></Nav>
-        <Header setIsOpen={setIsOpen} current="legal" />
+      <Header2 current={undefined}/>
         <MainContent type="normal">
           <div className="flex flex-col justify-center text-2xl lg:text-4xl h-[25vh]">
             <div>Legal Information</div>

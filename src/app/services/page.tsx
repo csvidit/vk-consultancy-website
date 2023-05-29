@@ -2,6 +2,7 @@
 
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import Header2 from "@/components/Header2";
 import Hero from "@/components/Hero";
 import JumboTitle from "@/components/JumboTItle";
 import MainContainer from "@/components/MainContainer";
@@ -46,8 +47,7 @@ export default function Home() {
         />
       </Head>
       <MainContainer>
-        <Nav isOpen={isOpen} setIsOpen={setIsOpen}></Nav>
-        <Header setIsOpen={setIsOpen} current="services" />
+        <Header2 current={undefined} />
         <MainContent type="normal">
           <div className="flex flex-col justify-center text-2xl lg:text-4xl h-[25vh]">
             <div>Website Design & Creation</div>
@@ -111,7 +111,9 @@ export default function Home() {
                   integrations, etc. must be borne by client.
                 </div>
                 <div className="flex flex-row space-x-1">
-                  <ServiceRevisionsInfo usd={50} inr={1200}>plus.</ServiceRevisionsInfo>
+                  <ServiceRevisionsInfo usd={50} inr={1200}>
+                    plus.
+                  </ServiceRevisionsInfo>
                 </div>
                 <div className="flex flex-row space-x-1 items-center flex-wrap">
                   Rates for continued development and maintenance based on
@@ -157,7 +159,12 @@ export default function Home() {
             </ServiceCard>
           </div>
           <div className="flex flex-col justify-center items-end text-base lg:text-lg h-[25vh]">
-            <p>Prices adjusted by purchasing power parity (PPP) of USD v. INR. Clients from countries other than USA and India <strong className="font-bold">must</strong> pay in USD. This is not negotiable.</p>
+            <p>
+              Prices adjusted by purchasing power parity (PPP) of USD v. INR.
+              Clients from countries other than USA and India{" "}
+              <strong className="font-bold">must</strong> pay in USD. This is
+              not negotiable.
+            </p>
           </div>
         </MainContent>
         <Footer />

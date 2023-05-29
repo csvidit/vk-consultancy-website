@@ -17,6 +17,7 @@ import ServiceRevisionsInfo from "@/components/ServiceRevisionsInfo";
 import Head from "next/head";
 import { useState } from "react";
 import { BsDot } from "react-icons/bs";
+import Header2 from "@/components/Header2";
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -48,8 +49,7 @@ export default function Home() {
         />
       </Head>
       <MainContainer>
-        <Nav isOpen={isOpen} setIsOpen={setIsOpen}></Nav>
-        <Header setIsOpen={setIsOpen} current="about" />
+      <Header2 current={undefined}/>
         <MainContent type="normal">
           <div className="flex flex-col justify-center text-2xl lg:text-4xl h-[100vh]">
             <div className="flex flex-col lg:flex-row space-y-5 lg:space-y-0 lg:space-x-10 lg:items-center">

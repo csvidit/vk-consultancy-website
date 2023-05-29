@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useState } from "react";
 import Nav from "./Nav";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
+import Nav2 from "./Nav2";
 
 const Header = (props: { current: string | undefined; setIsOpen: any }) => {
   if (props.current) {
@@ -34,6 +35,7 @@ const Header = (props: { current: string | undefined; setIsOpen: any }) => {
           <p className="hidden lg:flex">/</p>
           <div className="uppercase font-semibold">{props.current}</div>
         </div>
+        <Nav2/>
       </div>
     );
     // return (
@@ -87,6 +89,7 @@ const Header = (props: { current: string | undefined; setIsOpen: any }) => {
         </Link>
         <div className="border-t border-t-neutral-900 dark:border-t-neutral-100 w-0 z-0 h-0 group-hover:w-full group-hover:transition-all duration-200 ease-in-out bg-neutral-900 dark:bg-neutral-100"></div>
       </div>
+      <Nav2/>
     </div>
   );
 };
