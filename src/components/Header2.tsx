@@ -13,7 +13,7 @@ const Header2 = (props: { current: string | undefined }) => {
 
   if (props.current) {
     return (
-      <div className="flex flex-col space-y-2 w-screen text-lg lg:text-2xl uppercase fixed top-0 backdrop-blur-md bg-neutral-200 dark:bg-neutral-900 dark:bg-opacity-30 bg-opacity-30 z-40">
+      <div className="flex flex-col space-y-2 w-screen text-lg lg:text-2xl uppercase sticky top-0 backdrop-blur-md bg-neutral-200 dark:bg-neutral-900 dark:bg-opacity-30 bg-opacity-30 z-40">
         <div className="flex flex-row w-screen justify-between px-5 py-2.5 lg:px-10 lg:py-5">
           <button
             //   onClick={() => {
