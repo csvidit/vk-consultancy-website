@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import Nav2 from "./Nav2";
-import { Twirl as Hamburger } from "hamburger-react";
+import { Sling as Hamburger } from "hamburger-react";
 import { HiArrowLongRight } from "react-icons/hi2";
 
 const Header2 = (props: { current: string | undefined }) => {
