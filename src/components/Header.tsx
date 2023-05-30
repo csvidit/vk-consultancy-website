@@ -10,7 +10,7 @@ import Nav2 from "./Nav2";
 const Header = (props: { current: string | undefined; setIsOpen: any }) => {
   if (props.current) {
     return (
-      <div className="flex flex-row space-x-2 w-screen text-lg lg:text-2xl uppercase fixed top-0 px-5 py-2.5 lg:px-10 lg:py-5 backdrop-blur-md bg-neutral-200 dark:bg-neutral-900 dark:bg-opacity-30 bg-opacity-30 z-40">
+      <div className="flex flex-row space-x-2 max-h-screen w-screen text-lg lg:text-2xl uppercase fixed top-0 px-5 py-2.5 lg:px-10 lg:py-5 backdrop-blur-md bg-neutral-200 dark:bg-neutral-900 dark:bg-opacity-30 bg-opacity-30 z-40">
         <button
           onClick={() => {
             props.setIsOpen(true);
