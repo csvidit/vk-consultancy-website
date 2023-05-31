@@ -3,7 +3,7 @@ import MainContent from "./MainContent";
 import { SiCodemagic } from "react-icons/si";
 import { HiOutlineViewGrid } from "react-icons/hi";
 import { HiOutlineArrowSmRight } from "react-icons/hi";
-import {BsQuestionLg} from "react-icons/bs"
+import { BsQuestionLg } from "react-icons/bs";
 import Image from "next/image";
 
 const Hero = () => {
@@ -14,8 +14,8 @@ const Hero = () => {
         your tech team <span className="font-thin">awaits you.</span>
       </div>
       <div className="text-2xl lg:text-4xl font-thin">
-        want a cool website for your business? want a fresh design
-        system? want to create flyers or posters?
+        want a cool website for your business? want a fresh design system? want
+        to create flyers or posters?
         <span className="font-normal"> we got you.</span>
       </div>
       <div className="flex flex-col lg:flex-row space-y-5 lg:space-y-0 lg:space-x-5 items-start lg:items-center">
