@@ -1,26 +1,12 @@
-"use client";
-
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
+import Footer from "@/components/Footer/Footer";
+import Header from "@/components/Header/Header";
 import Image from "next/image";
-import Hero from "@/components/Hero";
 import InlineLink from "@/components/InlineLink";
-import JumboTitle from "@/components/JumboTItle";
 import MainContainer from "@/components/MainContainer";
 import MainContent from "@/components/MainContent";
-import Nav from "@/components/Nav";
-import ServiceCard from "@/components/ServiceCard";
-import ServiceInfo from "@/components/ServiceInfo";
-import ServiceName from "@/components/ServiceName";
-import ServicePrice from "@/components/ServicePrice";
-import ServiceRevisionsInfo from "@/components/ServiceRevisionsInfo";
 import Head from "next/head";
-import { useState } from "react";
-import { BsDot } from "react-icons/bs";
-import Header2 from "@/components/Header2";
 
-export default function Home() {
-  const [isOpen, setIsOpen] = useState(false);
+const Contact = () => {
   return (
     <>
       <Head>
@@ -49,13 +35,11 @@ export default function Home() {
         />
       </Head>
       <MainContainer>
-        <Header2 current="contact" />
-        <MainContent type="normal">
+        <Header current="contact" />
+        <MainContent type="center">
           <div className="flex flex-col space-y-5 lg:space-y-10 justify-center text-2xl lg:text-4xl">
             <div className="">
-              <div className="inline">Contact us at</div>
-              <span className="inline text-violet-700 dark:text-violet-300">
-                {" "}
+              <div className="inline">Contact us at{" "}
                 <InlineLink href="mailto:vidit@viditkhandelwal.com">
                   vidit@viditkhandelwal.com
                 </InlineLink>{" "}
@@ -64,7 +48,9 @@ export default function Home() {
                   this form
                 </InlineLink>
                 .
-              </span>
+              </div>
+        
+               
             </div>
           </div>
         </MainContent>
@@ -73,3 +59,5 @@ export default function Home() {
     </>
   );
 }
+
+export default Contact;

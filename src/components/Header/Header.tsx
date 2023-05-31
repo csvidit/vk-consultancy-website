@@ -4,11 +4,11 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { useState } from "react";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
-import Nav2 from "./Nav2";
+import Nav from "../Nav/Nav";
 import { Spiral as Hamburger } from "hamburger-react";
 import { HiArrowLongRight } from "react-icons/hi2";
 
-const Header2 = (props: { current: string | undefined }) => {
+const Header = (props: { current: string | undefined }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   if (props.current) {
@@ -44,7 +44,7 @@ const Header2 = (props: { current: string | undefined }) => {
             </div>
           </div>
         </div>
-        <Nav2 isOpen={isOpen} setIsOpen={setIsOpen} />
+        <Nav isOpen={isOpen} setIsOpen={setIsOpen} />
       </div>
     );
   }
@@ -72,9 +72,9 @@ const Header2 = (props: { current: string | undefined }) => {
           <div className="border-t border-t-neutral-900 dark:border-t-neutral-100 w-0 z-0 h-0 group-hover:w-full group-hover:transition-all duration-200 ease-in-out bg-neutral-900 dark:bg-neutral-100"></div>
         </div>
       </div>
-      <Nav2 isOpen={isOpen} setIsOpen={setIsOpen} />
+      <Nav isOpen={isOpen} setIsOpen={setIsOpen} />
     </div>
   );
 };
 
-export default Header2;
+export default Header;

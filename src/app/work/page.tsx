@@ -1,3 +1,5 @@
+
+
 import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
 import Image from "next/image";
@@ -6,7 +8,8 @@ import MainContainer from "@/components/MainContainer";
 import MainContent from "@/components/MainContent";
 import Head from "next/head";
 
-const About = () => {
+const Work = () => {
+  
   return (
     <>
       <Head>
@@ -35,7 +38,7 @@ const About = () => {
         />
       </Head>
       <MainContainer>
-        <Header current="about" />
+        <Header current="work" />
         <MainContent type="normal">
           <div className="flex flex-col space-y-5 lg:space-y-10 justify-center text-2xl lg:text-4xl h-[100vh]">
             <div className="flex flex-col lg:flex-row space-y-5 lg:space-y-0 lg:space-x-10 lg:items-start">
@@ -60,16 +63,12 @@ const About = () => {
                 <div className="text-base lg:text-lg spaced">
                   He graduated summa cum laude and a member of the Computer
                   Science Honor Society from DePauw University in 2023, earning
-                  a degree in Computer Science. He also spent a semester at the
-                  University of Oxford, studying international business and
-                  finance.
+                  a degree in Computer Science. He also spent a semester at the University of Oxford, studying international business and finance.
                 </div>
                 <div className="text-base lg:text-lg spaced">
-                  He has worked at the CaptureNoire project of Pixus, Inc., a
-                  very early-age start-up based out of Indianapolis, IN. He
-                  interned there as the lead engineer during his time as a
-                  student, spearheading the technical development of an
-                  industry-grade photography app.{" "}
+                  He has interned at the CaptureNoire project of Pixus, Inc. as
+                  the lead engineer during his time as a student, spearheading the
+                  technical development of an industry-grade photography app.{" "}
                 </div>
                 <div className="text-base lg:text-lg spaced">
                   To know more, visit his{" "}
@@ -90,4 +89,5 @@ const About = () => {
     </>
   );
 }
-export default About;
+
+export default Work;

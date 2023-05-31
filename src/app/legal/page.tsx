@@ -1,25 +1,11 @@
-"use client";
-
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
-import Header2 from "@/components/Header2";
-import Hero from "@/components/Hero";
+import Footer from "@/components/Footer/Footer";
+import Header from "@/components/Header/Header";
 import InlineLink from "@/components/InlineLink";
-import JumboTitle from "@/components/JumboTItle";
 import MainContainer from "@/components/MainContainer";
 import MainContent from "@/components/MainContent";
-import Nav from "@/components/Nav";
-import ServiceCard from "@/components/ServiceCard";
-import ServiceInfo from "@/components/ServiceInfo";
-import ServiceName from "@/components/ServiceName";
-import ServicePrice from "@/components/ServicePrice";
-import ServiceRevisionsInfo from "@/components/ServiceRevisionsInfo";
 import Head from "next/head";
-import { useState } from "react";
-import { BsDot } from "react-icons/bs";
 
-export default function Home() {
-  const [isOpen, setIsOpen] = useState(false);
+const Legal = () => {
   return (
     <>
       <Head>
@@ -48,7 +34,7 @@ export default function Home() {
         />
       </Head>
       <MainContainer>
-      <Header2 current="services"/>
+      <Header current="services"/>
         <MainContent type="normal">
           <div className="flex flex-col justify-center text-2xl lg:text-4xl h-[25vh]">
             <div>Legal Information</div>
@@ -111,3 +97,5 @@ export default function Home() {
     </>
   );
 }
+
+export default Legal;

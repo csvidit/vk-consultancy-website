@@ -1,16 +1,11 @@
-'use client'
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
+import Footer from "@/components/Footer/Footer";
+import Header from "@/components/Header/Header";
 import Hero from "@/components/Hero";
-import WhyUs from "@/components/WhyUs";
+import WhyUs from "@/components/WhyUs/WhyUs";
 import MainContainer from "@/components/MainContainer";
-import Nav from "@/components/Nav";
 import Head from "next/head";
-import { useState } from "react";
-import Header2 from "@/components/Header2";
 
-export default function Home() {
-  const [isOpen, setIsOpen] = useState(false);
+const Index = () => {
   return (
     <>
       <Head>
@@ -39,11 +34,13 @@ export default function Home() {
         />
       </Head>
       <MainContainer>
-        <Header2 current={undefined}/>
+        <Header current={undefined} />
         <Hero />
-        <WhyUs/>
+        <WhyUs />
         <Footer />
       </MainContainer>
     </>
   );
 }
+
+export default Index;
