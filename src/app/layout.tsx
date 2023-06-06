@@ -1,5 +1,6 @@
 import Head from "next/head";
 import "./globals.css";
+import { AnimatePresence, motion } from "framer-motion";
 
 export const metadata = {
   title: "Vidit Khandelwal Studio",

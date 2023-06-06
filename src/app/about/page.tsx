@@ -51,7 +51,7 @@ const About = () => {
               <div className="flex flex-col space-y-5 lg:space-y-10">
                 <div className="">
                   <div className="inline">Vidit Khandelwal</div>
-                  <span className="inline text-violet-700 dark:text-violet-300">
+                  <span className="inline text-violet-300">
                     {" "}
                     is a software engineer, web developer, and UI designer based
                     in the United States and India.

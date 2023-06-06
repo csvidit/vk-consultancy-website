@@ -15,7 +15,7 @@ const WhyUs = () => {
     <div
       id="why-us"
       className={
-        "min-w-screen min-h-screen h-full flex flex-col space-y-5 lg:space-y-10 bg-transparent justify-center p-5 lg:p-10 text-neutral-100 selection:text-neutral-900 dark:text-neutral-900 selection:bg-neutral-100 selection:dark:text-neutral-100 selection:dark:bg-neutral-900 " +
+        "min-w-screen min-h-screen h-full flex flex-col space-y-5 lg:space-y-10 bg-transparent justify-center p-5 lg:p-10 text-neutral-900 selection:text-neutral-100 selection:bg-neutral-900 " +
         styles.main_container +
         " " +
         styles.main_background

@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import { useState } from "react";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
@@ -13,8 +13,16 @@ const Header = (props: { current: string | undefined }) => {
 
   if (props.current) {
     return (
-      <div className="flex flex-col space-y-2 w-screen text-lg lg:text-2xl uppercase fixed top-0 backdrop-blur-md bg-neutral-200 dark:bg-neutral-900 dark:bg-opacity-30 bg-opacity-30 z-40">
-        <div className="flex flex-row w-screen justify-between px-5 py-2.5 lg:px-10 lg:py-5">
+      <motion.div
+        layout
+        transition={{ type: "tween" }}
+        exit={{ opacity: 0 }}
+        className="flex flex-col space-y-2 w-screen text-lg lg:text-2xl uppercase fixed top-0 backdrop-blur-md bg-neutral-900 dark:bg-opacity-30 bg-opacity-30 z-40"
+      >
+        <motion.div
+          layout
+          className="flex flex-row w-screen justify-between px-5 py-2.5 lg:px-10 lg:py-5"
+        >
           <button
             //   onClick={() => {
             //     setIsOpen(!isOpen);
@@ -23,34 +31,42 @@ const Header = (props: { current: string | undefined }) => {
           >
             <Hamburger size={20} toggled={isOpen} toggle={setIsOpen} />
           </button>
-          <div className="flex flex-col space-y-1 lg:space-y-0 lg:flex-row lg:space-x-1 items-start">
-            <div className="flex flex-col space-y-1 group w-fit h-fit">
+          <motion.div className="flex flex-col space-y-1 lg:space-y-0 lg:flex-row lg:space-x-1 items-start">
+            <motion.div className="flex flex-col space-y-1 group w-fit h-fit">
               <Link
                 href="/"
                 className="flex flex-row space-x-1 group transition-all"
               >
-                <div className="flex flex-row space-x-1 text-neutral-900 dark:text-neutral-100 font-extralight">
-                  <div className="flex">VIDIT KHANDELWAL</div>
-                  <div className="font-normal">STUDIO</div>
-                </div>
+                <motion.div className="flex flex-row space-x-1 text-neutral-100 font-extralight">
+                  <motion.div className="flex">VIDIT KHANDELWAL</motion.div>
+                  <motion.div className="">STUDIO</motion.div>
+                </motion.div>
               </Link>
-              <div className="border-t border-t-neutral-900 dark:border-t-neutral-100 w-0 z-0 h-0 group-hover:w-full group-hover:transition-all duration-200 ease-in-out bg-neutral-900 dark:bg-neutral-100"></div>
-            </div>
-            <div className="flex lg:flex-row lg:space-x-1 items-center">
-              <div className="font-extralight hidden lg:flex">
+              <motion.div className="border-t border-t-neutral-100 w-0 z-0 h-0 group-hover:w-full transition-all ease-in-out duration-200 bg-neutral-900 dark:bg-neutral-100"></motion.div>
+            </motion.div>
+            <motion.div className="flex lg:flex-row lg:space-x-1 items-center">
+              <motion.div className="font-extralight hidden lg:flex">
                 <HiArrowLongRight />
-              </div>
-              <div className="font-semibold">{props.current}</div>
-            </div>
-          </div>
-        </div>
+              </motion.div>
+              <motion.div className="font-semibold">{props.current}</motion.div>
+            </motion.div>
+          </motion.div>
+        </motion.div>
         <Nav isOpen={isOpen} setIsOpen={setIsOpen} />
-      </div>
+      </motion.div>
     );
   }
   return (
-    <div className="flex flex-col space-y-2 w-screen text-lg lg:text-2xl uppercase fixed top-0 backdrop-blur-md bg-neutral-200 dark:bg-neutral-900 dark:bg-opacity-30 bg-opacity-30 z-40">
-      <div className="flex flex-row w-screen justify-between px-5 py-2.5 lg:px-10 lg:py-5">
+    <motion.div
+      layout
+      transition={{ type: "tween" }}
+      exit={{ opacity: 0 }}
+      className="flex flex-col space-y-2 w-screen text-lg lg:text-2xl uppercase fixed top-0 backdrop-blur-md bg-neutral-900 dark:bg-opacity-30 bg-opacity-30 z-40"
+    >
+      <motion.div
+        layout
+        className="flex flex-row w-screen justify-between px-5 py-2.5 lg:px-10 lg:py-5"
+      >
         <button
           //   onClick={() => {
           //     setIsOpen(!isOpen);
@@ -59,21 +75,21 @@ const Header = (props: { current: string | undefined }) => {
         >
           <Hamburger size={20} toggled={isOpen} toggle={setIsOpen} />
         </button>
-        <div className="flex flex-col space-y-1 group w-fit h-fit">
+        <motion.div className="flex flex-col space-y-1 group w-fit h-fit">
           <Link
             href="/"
             className="flex flex-row space-x-1 group transition-all"
           >
-            <div className="flex flex-row space-x-1 text-neutral-900 dark:text-neutral-100 font-extralight">
-              <div className="flex">VIDIT KHANDELWAL</div>
-              <div className="font-normal">STUDIO</div>
-            </div>
+            <motion.div className="flex flex-row space-x-1 text-neutral-100 font-extralight">
+              <motion.div className="flex">VIDIT KHANDELWAL</motion.div>
+              <motion.div className="">STUDIO</motion.div>
+            </motion.div>
           </Link>
-          <div className="border-t border-t-neutral-900 dark:border-t-neutral-100 w-0 z-0 h-0 group-hover:w-full group-hover:transition-all duration-200 ease-in-out bg-neutral-900 dark:bg-neutral-100"></div>
-        </div>
-      </div>
+          <motion.div className="border-t border-t-neutral-100 w-0 z-0 h-0 group-hover:w-full group-hover:transition-all duration-200 ease-in-out bg-neutral-100"></motion.div>
+        </motion.div>
+      </motion.div>
       <Nav isOpen={isOpen} setIsOpen={setIsOpen} />
-    </div>
+    </motion.div>
   );
 };
 

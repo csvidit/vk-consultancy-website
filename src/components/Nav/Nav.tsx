@@ -18,6 +18,7 @@ const Nav = (props: { isOpen: boolean; setIsOpen: any }) => {
       className={"grow"}
     >
       <motion.div
+        layout
         className={`flex z-50 w-screen h-screen flex-col space-y-5 lg:space-y-10 items-start px-5 py-2.5 lg:px-10 lg:py-5 font-light capitalize
       ${
         props.isOpen
@@ -25,11 +26,18 @@ const Nav = (props: { isOpen: boolean; setIsOpen: any }) => {
           : "hidden opacity-0 transition-all duration-300 ease-in-out"
       }`}
       >
-        <NavLink size="large" href="/about">About</NavLink>
-        <NavLink size="large" href="/services">Services</NavLink>
-        <NavLink size="large" href="/work">Work</NavLink>
-        <NavLink size="large" href="/contact">Contact</NavLink>
-        
+        <NavLink size="large" href="/about">
+          About
+        </NavLink>
+        <NavLink size="large" href="/services">
+          Services
+        </NavLink>
+        <NavLink size="large" href="/work">
+          Work
+        </NavLink>
+        <NavLink size="large" href="/contact">
+          Contact
+        </NavLink>
       </motion.div>
     </Transition>
   );

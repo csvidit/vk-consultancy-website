@@ -60,7 +60,7 @@ const Services = () => {
                 <div className="flex flex-row space-x-1 items-center flex-wrap">
                   Rates for continued development and maintenance based on
                   complexity and needs, starting at
-                  <ServicePrice usd={25}>per billable hour</ServicePrice>
+                  <ServicePrice usd={20}>per billable hour</ServicePrice>
                   Number of hours depends on complexity of the project.
                 </div>
               </ServiceInfo>
@@ -80,7 +80,7 @@ const Services = () => {
                 <div className="flex flex-row space-x-1 items-center flex-wrap">
                   Rates for continued development and maintenance based on
                   complexity and needs, starting at
-                  <ServicePrice usd={25}>per billable hour</ServicePrice>
+                  <ServicePrice usd={20}>per billable hour</ServicePrice>
                   Number of hours depends on complexity of the project.
                 </div>
               </ServiceInfo>
@@ -101,7 +101,7 @@ const Services = () => {
                 <div className="flex flex-row space-x-1 items-center flex-wrap">
                   Rates for continued development and maintenance based on
                   complexity and needs, starting at
-                  <ServicePrice usd={40}>per billable hour</ServicePrice>
+                  <ServicePrice usd={30}>per billable hour</ServicePrice>
                   Number of hours depends on complexity of the project.
                 </div>
               </ServiceInfo>
@@ -129,7 +129,7 @@ const Services = () => {
                 <div className="flex flex-row space-x-1 items-center flex-wrap">
                   Rates for continued development and maintenance based on
                   complexity and needs, starting at
-                  <ServicePrice usd={40}>per billable hour</ServicePrice>
+                  <ServicePrice usd={30}>per billable hour</ServicePrice>
                   Number of hours depends on complexity of the project.
                 </div>
               </ServiceInfo>

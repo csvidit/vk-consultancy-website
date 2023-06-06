@@ -11,7 +11,7 @@ const NavLink = (props: {
 }) => {
   if (props.size == "large") {
     return (
-      <motion.div className="flex flex-col space-y-1 group text-6xl lg:text-8xl">
+      <motion.div layout className="flex flex-col space-y-1 group text-6xl lg:text-8xl">
         <Link
           href={props.href}
           className="flex flex-row space-x-1 group transition-all"
@@ -26,7 +26,7 @@ const NavLink = (props: {
     );
   } else {
     return (
-      <motion.div className="flex flex-col space-y-1 group text-2xl lg:text-4xl uppercase">
+      <motion.div layout className="flex flex-col space-y-1 group text-2xl lg:text-4xl uppercase">
         <Link
           href={props.href}
           className="flex flex-row space-x-1 group transition-all"

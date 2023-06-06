@@ -1,6 +1,6 @@
 import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
-import Hero from "@/components/Hero";
+import Hero from "@/components/Hero/Hero";
 import WhyUs from "@/components/WhyUs/WhyUs";
 import MainContainer from "@/components/MainContainer";
 import Head from "next/head";

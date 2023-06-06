@@ -188,6 +188,6 @@
 @media (prefers-color-scheme: light)
 {
   .main_background{
-    background-image: url("/background-light.png");
+    background-image: url("/background.png");
   }
 }
