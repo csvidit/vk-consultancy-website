@@ -41,7 +41,7 @@ const Hero = () => {
             <p className="z-10">Start Elevating Your Business</p>
             {/* <HiOutlineArrowSmRight className="z-10 hidden group-hover:block scale-0 group-hover:scale-100 transition-all duration-300 ease-in-out"/> */}
           </div>
-          <div className="absolute left-0 top-0 w-full h-full group-hover:top-0 group-hover:h-1/6 transition-all group-hover:transition-all ease-in-out duration-200 bg-neutral-100 group-hover:place-self-center group-hover:bg-neutral-100"></div>
+          <div className="absolute rounded-lg left-0 top-0 w-full h-full group-hover:top-0 group-hover:h-1/6 transition-all group-hover:transition-all ease-in-out duration-200 bg-neutral-100 group-hover:place-self-center group-hover:bg-neutral-100"></div>
         </Link>
         <Link
           href="#why-us"
@@ -51,7 +51,7 @@ const Hero = () => {
             <BsQuestionLg className="z-10 group-hover:rotate-180 group-hover:transition-all duration-200 ease-in-out" />
             <p className="z-10">Why Us?</p>
           </div>
-          <div className="absolute left-0 bottom-0 w-full h-[1px] transition-all group-hover:transition-all ease-in-out duration-200 bg-neutral-100 group-hover:place-self-center group-hover:h-full group-hover:bg-neutral-100"></div>
+          <div className="absolute rounded-lg left-0 bottom-0 w-full h-[1px] transition-all group-hover:transition-all ease-in-out duration-200 bg-neutral-100 group-hover:place-self-center group-hover:h-full group-hover:bg-neutral-100"></div>
         </Link>
       </div>
     </MainContent>
