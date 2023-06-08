@@ -39,7 +39,7 @@ const Services = () => {
         />
       </Head>
       <MainContainer>
-        <Header current="services" />
+        <Header/>
         <MainContent type="normal">
           <div className="flex flex-col justify-center text-2xl lg:text-4xl h-[25vh]">
             <div>Website Design & Creation</div>

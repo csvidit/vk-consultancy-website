@@ -35,7 +35,7 @@ const About = () => {
         />
       </Head>
       <MainContainer>
-        <Header current="about" />
+        <Header/>
         <MainContent type="normal">
           <div className="flex flex-col space-y-5 lg:space-y-10 justify-center text-2xl lg:text-4xl h-[100vh]">
             <div className="flex flex-col lg:flex-row space-y-5 lg:space-y-0 lg:space-x-10 lg:items-start">

@@ -35,7 +35,7 @@ const Contact = () => {
         />
       </Head>
       <MainContainer>
-        <Header current="contact" />
+        <Header/>
         <MainContent type="center">
           <div className="flex flex-col space-y-5 lg:space-y-10 justify-center text-2xl lg:text-4xl">
             <div className="">

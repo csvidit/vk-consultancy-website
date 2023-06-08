@@ -7,11 +7,15 @@ import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import Nav from "../Nav/Nav";
 import { Spiral as Hamburger } from "hamburger-react";
 import { HiArrowLongRight } from "react-icons/hi2";
+import {usePathname} from "next/navigation"
 
-const Header = (props: { current: string | undefined }) => {
+const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  if (props.current) {
+  let pathName = usePathname().substring(1);
+
+
+  if (pathName != "" && pathName !=undefined) {
     return (
       <motion.div
         layout
@@ -24,9 +28,6 @@ const Header = (props: { current: string | undefined }) => {
           className="flex flex-row w-screen justify-between px-5 py-2.5 lg:px-10 lg:py-5"
         >
           <button
-            //   onClick={() => {
-            //     setIsOpen(!isOpen);
-            //   }}
             className="absolute right-5 lg:right-10 self-center"
           >
             <Hamburger size={20} toggled={isOpen} toggle={setIsOpen} />
@@ -48,7 +49,7 @@ const Header = (props: { current: string | undefined }) => {
               <motion.div className="font-extralight hidden lg:flex">
                 <HiArrowLongRight />
               </motion.div>
-              <motion.div className="font-semibold">{props.current}</motion.div>
+              <motion.div className="font-semibold">{pathName}</motion.div>
             </motion.div>
           </motion.div>
         </motion.div>

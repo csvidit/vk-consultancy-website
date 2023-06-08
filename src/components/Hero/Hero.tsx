@@ -10,6 +10,7 @@ import Image from "next/image";
 import HeroSubtitles from "./HeroSubtitles";
 import MediaQuery, { useMediaQuery } from "react-responsive";
 import { Suspense, useEffect } from "react";
+import HeroSubtitlesFallback from "./HeroSubtitlesFallback";
 
 const Hero = () => {
   const isBigScreen = useMediaQuery({ query: "(min-width: 1001px)" });
@@ -20,19 +21,7 @@ const Hero = () => {
       <div className="text-6xl lg:text-8xl">
         your tech team <span className="font-thin">awaits you.</span>
       </div>
-      {/* <Suspense>
-        <MediaQuery maxWidth={1000}>
-          <div className="text-2xl lg:text-4xl font-thin">
-            want a cool website for your business? want a fresh design system?
-            want to create flyers or posters?
-            <span className="font-normal"> we got you.</span>
-          </div>
-        </MediaQuery>
-        <MediaQuery minWidth={1001}>
-          <HeroSubtitles />
-        </MediaQuery>
-      </Suspense> */}
-      <Suspense>
+      <Suspense fallback={<HeroSubtitlesFallback/>}>
         {!isBigScreen && (
           <div className="text-2xl lg:text-4xl font-thin">
             want a cool website for your business? want a fresh design system?

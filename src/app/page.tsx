@@ -34,7 +34,7 @@ const Index = () => {
         />
       </Head>
       <MainContainer>
-        <Header current={undefined} />
+        <Header/>
         <Hero />
         <WhyUs />
         <Footer />
