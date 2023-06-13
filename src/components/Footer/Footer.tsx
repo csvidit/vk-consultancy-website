@@ -4,7 +4,7 @@ import FooterLink from "./FooterLink";
 
 const Footer = () => {
   return (
-    <div className="flex flex-row justify-center self-center w-screen bottom-0 font-extralight">
+    <div className="absolute flex flex-row justify-center self-center w-screen bottom-0 font-extralight">
       <footer className="flex flex-col lg:flex-row space-y-2 lg:space-y-0 lg:space-x-2 lg:items-center lg:justify-between self-end p-4 items-end bg-neutral-900 dark:bg-opacity-30 bg-opacity-30 w-full text-neutral-100 overflow-hidden">
         <div className="flex flex-row space-x-2 items-center">
           <p className="">&copy; 2023</p>

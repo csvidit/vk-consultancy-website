@@ -4,6 +4,9 @@ import Hero from "@/components/Hero/Hero";
 import WhyUs from "@/components/WhyUs/WhyUs";
 import MainContainer from "@/components/MainContainer";
 import Head from "next/head";
+import Link from "next/link";
+import { motion } from "framer-motion";
+import CTA from "@/components/CTA/CTA";
 
 const Index = () => {
   return (
@@ -34,13 +37,14 @@ const Index = () => {
         />
       </Head>
       <MainContainer>
-        <Header/>
+        <Header />
         <Hero />
         <WhyUs />
-        <Footer />
+        <CTA/>
+        
       </MainContainer>
     </>
   );
-}
+};
 
 export default Index;

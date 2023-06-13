@@ -21,7 +21,8 @@ const Hero = () => {
       <div className="text-6xl lg:text-8xl">
         your tech team <span className="font-thin">awaits you.</span>
       </div>
-      <Suspense fallback={<HeroSubtitlesFallback/>}>
+      <HeroSubtitlesFallback/>
+      {/* <Suspense fallback={<HeroSubtitlesFallback/>}>
         {!isBigScreen && (
           <div className="text-2xl lg:text-4xl font-thin">
             want a cool website for your business? want a fresh design system?
@@ -30,7 +31,7 @@ const Hero = () => {
           </div>
         )}
         {isBigScreen && <HeroSubtitles />}
-      </Suspense>
+      </Suspense> */}
       <div className="flex flex-col lg:flex-row space-y-5 lg:space-y-0 lg:space-x-5 items-start lg:items-center">
         <Link
           href="https://tjdqeyg9n8x.typeform.com/to/dyMM42pF"
